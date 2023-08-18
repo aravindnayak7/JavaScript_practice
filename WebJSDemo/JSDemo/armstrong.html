@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input size="20px" id="01" onclick="armStrong()" type="text" onblur="color(this)"/>
+    <button id="id2"  onclick="armStrong()">=</button>
+    <p id="result"></p>
+    <script>
+        
+    //    function armStrong()
+    //     {   
+    //         var num=parseInt(document.getElementById("01").value);
+    //         var rem;
+    //         while(num>=0){
+    //             rem=num%10;
+    //             arm=arm*arm*arm+rem;
+    //             num=num/10;
+    //         }
+    //         //let res=cont1+cont2;
+    //         document.getElementById("out").value=arm;
+    //         if(arm==num){
+    //             res2="Invalid Number";
+                
+    //             document.getElementById("out").value=res2;
+    //         }
+    //     }
+    function armStrong(){
+        var num=document.getElementById("01").value;
+        var digits=num.length;
+        var number=parseInt(num);
+        var sum=0;
+        for(var i=0;i<digits;i++){
+            sum +=Math.pow(parseInt(num.charAt(i)), digits);
+        }
+        if(sum==number) document.getElementById("result").innerHTML ="Yes";
+     else document.getElementById("result").innerHTML ="No"  
+    }
+     
+    </script>
+</body>
+</html>
+<!--
+    arm=0
+    while(num>=0){
+        rem=num%10;
+        arm=arm*arm*arm+rem
+        num=num/10
+    }
+-->

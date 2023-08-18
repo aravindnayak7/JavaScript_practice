@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+         body{
+            background-color: rgb(96, 207, 96);
+        }
+        .fill{
+            border-align:center;
+            border-radius:20px;
+            
+            border:3;
+            margin-left:35%;
+            margin-top:10%; 
+            border-color:red;
+            box-shadow:grey 5px 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Employee Registraion Details</h1>
+    <fieldset class="fill">
+        <form>
+            <table>
+                <tr>
+                    <td><label>Enter your name</label></td>
+                    <td><input type="text" value="firstName" pattern="^[A-Z]{1}[A-Za-z ]{1,20}$"/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>Enter Date of Birth</label></td>
+                    <td><input type="date" /></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr colspan="4">
+                    <td ><label>Select Hobbies</label></td>
+                    <td><input type="checkbox"/> Sports</td>
+                    <td><input type="checkbox"/> Music</td>
+                    <td><input type="checkbox"/> Reading</td>
+                    <td><input type="checkbox"/> Swimming</td>
+                </tr>
+                <tr>
+                    <td><label>Skills</label></td>
+                    <td><input type="checkbox"/> C</td>
+                    <td><input type="checkbox"/> C++</td>
+                    <td><input type="checkbox"/> C#</td>
+                    <td><input type="checkbox"/> SQL</td>
+                </tr>
+                <tr>
+                    <td><label>Select Gender</label></td>
+                    <td><input type="radio" name="gender" />Male</td>
+                    <td><input type="radio" name="gender" /> Female</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Enter Age</td>
+                    <td><input type="text" /></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>Do you have passport?</label></td>
+                    <td><input type="radio" name="yes" />Yes</td>
+                       <td><input type="radio" name="yes" /> No</td>
+                       <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Select City</td>
+                    <td><select>
+                    <option>Select a City</option>
+                    <option>Hyderabad</option>
+                    <option>Hyderabad</option>
+                    <option>Hyderabad</option>
+                    <option>Hyderabad</option>
+                    <option>Hyderabad</option>
+                </select></td>
+            <td></td>
+            <td></td>
+            <td></td></tr>
+                <tr>
+                    <td><label>Enter Password</label></td>
+                    <td><input type="password" /></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>Re-Enter Password</label></td>
+                    <td><input type="password" /></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>Enter eMail</label></td>
+                    <td><input type="text" /></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+               <tr>
+                <td class="btn-pr"><input type="submit" value="Reset" /></td>
+                <td><input type="submit" /></td>
+                <td></td>
+                    <td></td>
+                    <td></td>
+               </tr>
+                
+            </table>
+        </form>
+    </fieldset>
+    
+</body>
+</html>

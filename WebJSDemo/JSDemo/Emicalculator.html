@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Emi Calculator</h1>
+    <label>Enter the Principle Ammount</label>
+    <input type="text area" id="01" name="ammount"/>
+    <label>Enter the num of months</label>
+    <input type="text area" id="02" name="months" />
+    <label>Rate of Interest</label>
+    <input type="text area" id="03" name="Interest" />
+    <button type="button" onclick="emiCal()">Click here</button>
+    <p id="result"></p>
+    <script>
+        function emiCal(){
+            var pri=parseInt(document.getElementById("01").value); //principle ammount
+            var mon=parseInt(document.getElementById("02").value); //num of months
+            var intr=parseInt(document.getElementById("03").value); //interest
+            var res=pri*mon;
+            var res1=res*intr;
+            var res3=res1/100;
+            var final=pri-res3;
+            document.write(final);
+        }
+    </script>
+</body>
+</html>

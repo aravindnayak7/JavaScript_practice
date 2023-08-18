@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h4>Addition of two number</h1>
+    <input style="width:50px;height:10px;" id="01" type="text" onblur="color(this)"/>
+    +
+    <input style="width:50px;height:10px;" id="02" type="text" onblur="color(this)" />
+    <button id="id2"  onclick="addTwobox()">=</button>
+    <input style="width:50px;height:10px" type="text" id="out" type="text" readonly/>
+    <!-- <input type="text" id="out2" type="text" readonly/> -->
+   
+    <script>
+        // para.innerHTML="something";
+        // alert("hi");
+        function addTwobox()
+        {   
+            var cont1=parseInt(document.getElementById("01").value);
+            var cont2=parseInt(document.getElementById("02").value);
+            let res=cont1+cont2;
+            document.getElementById("out").value=res;
+            if(isNaN(res)){
+                res2="Invalid Number";
+                
+                document.getElementById("out").value=res2;
+            }
+        }
+        // function color(obj){
+        //     if(isNaN(document.getElementById("01").value||document.getElemnetById("02"))){// to pic the value we use value
+        //         document.getElementById("01").style.backgroundColor="red";
+        //         document.getElementById("02").style.backgroundColor="red";
+        //     }
+        //     else{
+        //         document.getElementById("01").style.backgroundColo="white";
+        //         document.getElementById("02").style.backgroundColo="white";
+        //     }
+
+        //     document.getElimentById("01").style.b
+        // }
+            function color(obj){
+                var t=obj.value;
+                if(obj.value.length==0||isNaN(obj.value)){
+                    obj.style.backgroundColor="Red";
+                }
+                else{
+                    obj.style.backgroundColor="white";
+                }
+            }
+            //console.log(res);
+            // if(document.getElementById("out").value=="NaN"){
+            //     res2="Invalid Number";
+                
+            //     document.getElementById("out").value=res2;
+            //  }
+            // if(document.getElem)
+        //}
+        // function isNaN(){
+        //     if(document.getElementById("out").value=="NaN"){
+        //        alert("Invalid");
+        //     }
+        // }
+       
+    </script>
+    <!-- <script>
+        function checNull(obj){
+            var t = obj.value;
+            if(obj.value.length ==0 || isNaN(obj.value)){
+                obj.style.backgroundColor//red
+            }
+            else{
+                obj.style//white
+            }
+        }
+        function calSum(){
+            var v1=parseInt(text1.value);
+            var v2=par(text2.value);
+            var v3=v1+v2;
+            if(!isNaN(v3)) Text3.value=v3;
+            else Text3.value = "Invalid values(s)";
+        }
+    </script> -->
+</body>
+</html>

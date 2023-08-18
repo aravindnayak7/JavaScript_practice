@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label id="lap1" name="label">Laptop</label>
+    <input for="lap" type="checkbox" id="01" name="gadget" value="100" />
+    <label>Tablet</label>
+    <input type="checkbox" id="02" name="gadget" value="200" />
+    <label>Mobile</label>
+    <input type="checkbox" id="03" name="gadget" value="300" />
+    <label>Mouse</label>
+    <input type="checkbox" id="04" name="gadget" value="400" />
+    <label>Keyboard</label>
+    <input type="checkbox" id="04" name="gadget" value="400" />
+    <button id="05" onclick="resEle()">Click here</button>
+    <!--<p id="resi"></p>-->
+    <script>
+        function resEle(){
+        var ele=document.getElementsByName("gadget");
+        var label=document.getElementsByName("lap");
+        var len=ele.length;
+        var sum=0;
+        var str="";
+        for(var i=0;i<len;i++){
+            if(ele[i].checked==true){
+                sum=sum+parseInt(ele[i].value);
+                str=str+labels[i].innerHTML+" ";
+            }
+        }
+        document.write(sum);
+        }
+    </script>
+</body>
+</html>

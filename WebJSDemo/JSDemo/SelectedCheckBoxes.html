@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelectedCheckBoxes</title>
+</head>
+<body>
+    <input type="checkbox"  id="id1" />Laptop
+    <input type="checkbox"  id="id2" />Tablet
+    <input type="checkbox"  id="id3" />Mobile
+    <input type="checkbox"  id="id4" />Keyboard
+    <br/>
+    <button type="button" id="5" onclick="sItem()">check selected items</button>
+    <p id="result"></p>
+    <script>
+        function sItem(){
+            document.getElementById('id1').onclick = function () {
+    // access properties using this keyword
+    if ( this.checked ) {
+        // Returns true if checked
+        var num=1+1;
+        if(sum==number) document.getElementById("result").innerHTML ="Yes";
+        alert( this.value=parseInt(num));
+    } else {
+        // Returns false if not checked
+    }
+}    
+        }
+            
+        document.getElementById('id2').onclick = function() {
+    // access properties using this keyword
+    if ( this.checked ) {
+        // Returns true if checked
+        alert( this.value );
+    } else {
+        // Returns false if not checked
+    }
+}
+document.getElementById('id3').onclick = function() {
+    // access properties using this keyword
+    if ( this.checked ) {
+        // Returns true if checked
+        alert( this.value );
+    } else {
+        // Returns false if not checked
+    }
+}
+    </script>
+</body>
+</html>
